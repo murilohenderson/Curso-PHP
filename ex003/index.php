@@ -30,7 +30,7 @@
         </h2>
         <?php 
             $soma = $valor1 + $valor2;
-            echo "<p>A soma entre $valor1 e $valor2 é $soma</p>";
+            echo "<p>A soma entre $valor1 e $valor2 é $soma"
         ?>
     </section>
 </body>
