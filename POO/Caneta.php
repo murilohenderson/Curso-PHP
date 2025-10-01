@@ -2,10 +2,11 @@
     class Caneta {
         public $modelo;
         public $cor;
-        public $ponta;
-        public $carga;
-        public $tampada;
-        function rabiscar() {
+        private $ponta;
+        protected $carga;
+        protected $tampada;
+
+        public function rabiscar() {
             if ($this -> tampada == true) {
                 echo "<p>Não é possível rabiscar, a caneta está tampada</p>";
             } else {
@@ -18,10 +19,10 @@
                 echo "<p>Estou rabiscando</p>";
             }
         }
-        function tampar() {
+        private function tampar() {
             $this -> tampada = true;
         }
-        function destampar() {
+        private function destampar() {
             $this -> tampada = false;
         }
     }
